@@ -1,17 +1,17 @@
-const express = require('express');
+const express = require("express");
 const app = express();
-const path = require('path');
+const path = require("path");
 const port = 3000;
 
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'pug');
+app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "pug");
 
-app.get('/', (req, res) => {
-  res.render('template', {
+app.get("/", (req, res) => {
+  res.render("template", {
     meta: {
       data: {
-        title: 'Floema',
-        description: 'Metadata description.',
+        title: "Metadata title",
+        description: "Metadata description.",
       },
     },
   });
